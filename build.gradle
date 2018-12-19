@@ -20,6 +20,11 @@ allprojects {
         google()
         jcenter()
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 task clean(type: Delete) {
